@@ -28,14 +28,14 @@ const (
 	OLatB    = 0x15 // output latch B
 )
 
-// I/O config addresses for MCP chips
+// I/O config for MCP chips
 const (
 	BankOff      = 0x00 // addressing mode
 	BankOn       = 0x80
 	IntMirrorOn  = 0x40 // interupt mirror (INTa|INTb)
 	IntMirrorOff = 0x00
 	SeqOpOff     = 0x20 // incrementing address pointer
-	SegOpOn      = 0x00
+	SeqOpOn      = 0x00
 	DisSlwOn     = 0x10 // slew rate
 	DisSlwOff    = 0x00
 	HaEnOn       = 0x08 // hardware addressing
@@ -43,13 +43,13 @@ const (
 	ODrOn        = 0x04 // open drain for interupts
 	ODrOff       = 0x00
 	IntPolHigh   = 0x02 // interupt polarity
-	OntPolLow    = 0x00
+	IntPolLow    = 0x00
 )
 
 // Commands
 const (
-	WriteComd = 0
-	ReadCmd   = 1
+	WriteCmd = 0
+	ReadCmd  = 1
 )
 
 // Nibbles
